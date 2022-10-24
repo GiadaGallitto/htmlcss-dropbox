@@ -101,3 +101,9 @@ article.operations-container{
     margin: 0 1.5rem 2rem 1.5rem;
     border: 1px solid black;
 }
+
+section.discover{
+    height: 30vh;
+    margin: 150px auto 0;
+    background-color: blanchedalmond;
+}
