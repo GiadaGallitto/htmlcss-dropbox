@@ -80,16 +80,24 @@ section.partner-contact .partner-text{
 }
 
 section.dropbox-operations{
-    height: 80vh;
+    height: 100vh;
     margin: 150px auto 0;
     background-color: rgb(114, 17, 17);
 }
 
-.dropbox-operations h2{
-    height: 15%;
+.dropbox-operations div{
+    height: 10%;
 }
 
 article.operations-container{
-    height: 85%;
+    height: 90%;
     background-color: rgb(153, 60, 60);
+    flex-wrap: wrap;
+}
+
+.operations-container .op-card{
+    flex-basis: calc((100% / 3) - 3rem);
+    height: calc((100% / 2) - 2rem);
+    margin: 0 1.5rem 2rem 1.5rem;
+    border: 1px solid black;
 }
