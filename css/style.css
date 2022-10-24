@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .flex-container{
     display: flex;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+.p-absolute{
+    position: absolute;
 }
 
 .medium-width{
@@ -22,13 +26,14 @@ ul{
 
 nav{
     height: 80px;
+    width: 100%;
     background-color: white;
     justify-content: space-between;
     align-items: center;
     padding-left: 2rem;
     position: fixed;
-    width: 100%;
     top: 0;
+    z-index: 3;
 }
 
 nav ul li, #logo-small{
@@ -37,12 +42,15 @@ nav ul li, #logo-small{
     font-size: 1.05rem;
 }
 
-nav button{
-    font-size: 1.05rem;
-    padding: 0.5rem 1rem;
+header button{
     background-color: #0061ff;
     color: white;
     border: none;
+}
+
+nav button{
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem;
 }
 
 #logo-small{
@@ -50,17 +58,57 @@ nav button{
 }
 
 section.main-header{
-    margin-top: 80px;
+    margin-top: 60px;
     height: 70vh;
     background-color: #b4d0e7;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 article.header-container{
     margin: 0 auto;
     width: 70%;
     height: 67vh;
-    background-color: rgb(61, 61, 233);
+}
+
+.header-container h1{
+    height: 20%;
+    font-size: 3.3rem;
+    font-weight: 800;
+    width: 80%;
+    padding-left: 5rem;
+    margin-bottom: 2.2rem;
+}
+
+.header-container>div{
+    height: 80%;
+    padding-left: 5rem;
+}
+
+.main-header div.description{
+    flex-basis: 35%;
+    padding: 2rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+.description>button{
+    margin: 2rem 0;
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+}
+
+.fa-arrow-down{
+    bottom: 20%;
+    left: 10%;
+    font-size: 3.15rem;
+}
+
+.main-header div.jumbotron{
+    flex-basis: 65%;
+}
+
+div.jumbotron img{
+    height: 100%;
 }
 
 section.business-plans{
