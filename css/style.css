@@ -130,3 +130,20 @@ div.logos-part .box-logo{
     flex-basis: 40%;
     background-color: rgb(34, 148, 110);
 }
+
+section.free-trial{
+    height: 35vh;
+    background-color: #b4d0e7;
+}
+
+section.free-trial article{
+    height: 100%;
+    margin: 0 auto;
+    background-color: #7cafda;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article#trial div{
+    border: 1px solid black;
+}
