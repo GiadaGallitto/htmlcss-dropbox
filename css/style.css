@@ -165,3 +165,33 @@ section.questions article{
 .question-container p{
     line-height: 70px;
 }
+
+section.tools{
+    height: 40vh;
+    background-color: black;
+    color: white;
+}
+
+.footer-container{
+    height: 80%;
+    margin: 0 auto;
+}
+
+.footer-container div.tool-list{
+    flex-basis: calc(100% / 5);
+    padding-right: 1.5rem;
+    background-color: thistle;
+    border: 1px solid black;
+}
+
+.language{
+    height: 20%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.language .row{
+    width: 150px;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
