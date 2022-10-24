@@ -16,12 +16,41 @@ body{
     width: 60%;
 }
 
+ul{
+    list-style-type: none;
+}
+
 nav{
     height: 80px;
-    background-color: paleturquoise;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul li, #logo-small{
+    display: inline-block;
+    padding-right: 2rem;
+    font-size: 1.05rem;
+}
+
+nav button{
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem;
+    background-color: #0061ff;
+    color: white;
+    border: none;
+}
+
+#logo-small{
+    vertical-align: middle;
 }
 
 section.main-header{
+    margin-top: 80px;
     height: 70vh;
     background-color: #b4d0e7;
     padding-top: 100px;
