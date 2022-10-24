@@ -147,3 +147,21 @@ section.free-trial article{
 article#trial div{
     border: 1px solid black;
 }
+
+section.questions{
+    height: 50vh;
+}
+
+section.questions article{
+    height: 70%;
+    margin: 100px auto;
+    background-color: rgb(231, 231, 109);
+}
+
+.question-container h2{
+    padding-bottom: 55px;
+}
+
+.question-container p{
+    line-height: 70px;
+}
