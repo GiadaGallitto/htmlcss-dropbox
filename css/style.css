@@ -78,3 +78,18 @@ section.partner-contact .partner-text{
     flex-basis: 40%;
     border: 2px solid black;
 }
+
+section.dropbox-operations{
+    height: 80vh;
+    margin: 150px auto 0;
+    background-color: rgb(114, 17, 17);
+}
+
+.dropbox-operations h2{
+    height: 15%;
+}
+
+article.operations-container{
+    height: 85%;
+    background-color: rgb(153, 60, 60);
+}
