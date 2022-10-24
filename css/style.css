@@ -107,3 +107,26 @@ section.discover{
     margin: 150px auto 0;
     background-color: blanchedalmond;
 }
+
+section.partnership{
+    height: 60vh;
+    background-color: rgb(167, 164, 164);
+    margin-top: 150px;
+}
+
+.partnership div.logos-part{
+    flex-basis: 30%;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+}
+
+div.logos-part .box-logo{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.partnership div.logo-info{
+    flex-basis: 40%;
+    background-color: rgb(34, 148, 110);
+}
