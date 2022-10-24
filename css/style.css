@@ -61,3 +61,20 @@ article.contact-plan{
     margin-top: 2rem;
     background-color: rgb(235, 175, 64);
 }
+
+section.partner-contact{
+    height: 50vh;
+    margin: 150px auto 0;
+    background-color: palevioletred;
+}
+
+section.partner-contact .partner-img{
+    flex-basis: 60%;
+    border: 2px solid black;
+    background-color: teal;
+}
+
+section.partner-contact .partner-text{
+    flex-basis: 40%;
+    border: 2px solid black;
+}
