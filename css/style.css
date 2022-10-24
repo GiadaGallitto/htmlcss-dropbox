@@ -12,6 +12,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.medium-width{
+    width: 60%;
+}
+
 nav{
     height: 80px;
     background-color: paleturquoise;
@@ -25,7 +29,35 @@ section.main-header{
 
 article.header-container{
     margin: 0 auto;
-    width: 65%;
+    width: 70%;
     height: 67vh;
     background-color: rgb(61, 61, 233);
+}
+
+section.business-plans{
+    height: calc(150vh - 150px);
+    margin: 150px auto 0;
+    background-color: rgb(230, 50, 110);
+}
+
+article.title-check{
+    height: 17%;
+    background-color: rgb(177, 226, 104);
+}
+
+article.plan-cards{
+    height: 60%;
+    justify-content: space-between;
+}
+
+div.card-plan{
+    width: calc((100% / 3) - 1.5rem);
+    background-color: rgb(183, 122, 240);
+    border: 2px solid black;
+}
+
+article.contact-plan{
+    height: 23%;
+    margin-top: 2rem;
+    background-color: rgb(235, 175, 64);
 }
