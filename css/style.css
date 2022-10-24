@@ -42,7 +42,7 @@ nav ul li, #logo-small{
     font-size: 1.05rem;
 }
 
-header button{
+.blue-button{
     background-color: #0061ff;
     color: white;
     border: none;
@@ -137,8 +137,7 @@ article.plan-cards{
 
 div.card-plan{
     width: calc((100% / 3) - 1.5rem);
-    background-color: rgb(183, 122, 240);
-    border: 2px solid black;
+    border: 2px solid #d0d0d3;
 }
 
 .card-plan div.plan-type{
@@ -147,10 +146,52 @@ div.card-plan{
     text-align: center;
     line-height: 2.7;
     background-color: white;
+    border-bottom: 1px solid #d0d0d3;
 }
 
 .card-plan div.plan-info{
     padding: 1.5rem 1.5rem;
+}
+
+div.plan-info>div{
+    margin-bottom: 2rem;
+}
+
+div.plan-info h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+div.plan-info p{
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+}
+
+div.plan-info p.price{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+div.plan-info ul li{
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+div.plan-info .trial-button{
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+div.small-divider{
+    width: 30%;
+    border: 0.1em solid lightgray;
+    margin-bottom: 0.5rem;
+}
+
+div.plan-info .highlights{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 article.contact-plan{
