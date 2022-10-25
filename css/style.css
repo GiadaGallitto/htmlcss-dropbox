@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    min-width: 1650px;
 }
 
 .flex-container{
@@ -140,16 +141,16 @@ div.card-plan{
     border: 2px solid #d0d0d3;
 }
 
-.card-plan div.plan-type{
+div.plan-type{
     width: 100%;
-    height: 6%;
+    height: 43px;
     text-align: center;
     line-height: 2.7;
-    background-color: white;
     border-bottom: 1px solid #d0d0d3;
 }
 
-.card-plan div.plan-info{
+.card-plan div.plan-info,
+div.card-contact{
     padding: 1.5rem 1.5rem;
 }
 
@@ -161,12 +162,12 @@ div.card-plan{
     margin-bottom: 4.4rem;
 }
 
-div.plan-info h3{
+section.business-plans h3{
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
 }
 
-div.plan-info p{
+section.business-plans p{
     margin-bottom: 0.7rem;
     font-size: 0.95rem;
 }
@@ -185,7 +186,7 @@ div.plan-info li span{
     padding-right: 0.3rem;
 }
 
-div.plan-info .trial-button{
+button.trial-button{
     padding: 0.8rem 2.7rem;
     font-size: 0.9rem;
     margin: 0 auto 1rem;
@@ -218,7 +219,15 @@ div.plan-info .highlights{
 article.contact-plan{
     height: 28%;
     margin-top: 2rem;
-    background-color: rgb(235, 175, 64);
+    border: 2px solid #d0d0d3;
+}
+
+.card-contact div.left-card{
+    flex-basis: 72%;
+}
+
+.card-contact div.right-card{
+    flex-basis: 28%;
 }
 
 section.partner-contact{
