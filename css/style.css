@@ -440,15 +440,22 @@ section.questions{
 section.questions article{
     height: 70%;
     margin: 100px auto;
-    background-color: rgb(231, 231, 109);
 }
 
 .question-container h2{
-    padding-bottom: 55px;
+    padding-bottom: 15px;
+}
+
+.question-container div.row-quest{
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2.5rem;
 }
 
 .question-container p{
     line-height: 70px;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 section.tools{
