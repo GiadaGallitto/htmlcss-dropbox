@@ -314,21 +314,22 @@ section.partnership{
     margin-top: 150px;
 }
 
+section.partnership>div{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+
 .partnership div.logos-part{
-    flex-basis: calc(100vw / 3);
     background-color: aquamarine;
     flex-wrap: wrap;
 }
 
 div.logos-part .box-logo{
-    width: calc(100% / 2);
-    height: calc(100% / 2);
-    border: 1px solid black;
+    width: calc(100vw / 6);
+    height: calc(100vw / 6);
 }
 
-/* Mettere una max-width */
 .partnership div.logo-info{
-    flex-basis: calc(100vw / 3);
     background-color: rgb(34, 148, 110);
 }
 
