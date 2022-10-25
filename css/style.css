@@ -326,8 +326,41 @@ section.partnership>div{
 div.logos-part .box-logo{
     width: 50%;
     height: 50%;
-    border: 1px solid black;
-    background-color: magenta;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-logo img{
+    height: 15%;
+}
+
+#green-log{
+    background-color: #a2d39b;
+    border: 15px solid #d1e9cd;
+}
+
+#bordeaux-log{
+    background-color: #61082b;
+}
+
+#bordeaux-log img{
+    height: 35%;
+}
+
+#light-blue-log{
+    background-color: #0093ce;
+}
+
+#light-blue-log img{
+    height: 12%;
+}
+
+.red-log{
+    background-color: #ff1c1c;
+}
+
+#topps-log img{
+    height: 22%;
 }
 
 .partnership div.logo-info{
