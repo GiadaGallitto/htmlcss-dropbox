@@ -388,7 +388,19 @@ div.logos-part .box-logo{
 }
 
 .partnership div.logo-info{
-    background-color: rgb(34, 148, 110);
+    background-color: #f5f5f5;
+    padding: 2.5rem;
+}
+
+div.logo-info img{
+    height: 15%;
+    display: block;
+}
+
+div.logo-info .logo-divider{
+    width: 20%;
+    border: 1px solid lightgray;
+    margin: 2rem 0;
 }
 
 section.free-trial{
