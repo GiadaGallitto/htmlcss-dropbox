@@ -298,9 +298,14 @@ div.image-card img{
 }
 
 section.discover{
-    height: 30vh;
+    height: 15vh;
     margin: 150px auto 0;
-    background-color: blanchedalmond;
+    padding: 0 2rem;
+}
+
+section.discover h2{
+    width: 55%;
+    font-size: 2rem;
 }
 
 section.partnership{
