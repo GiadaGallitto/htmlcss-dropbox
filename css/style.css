@@ -280,7 +280,6 @@ article.operations-container{
     flex-basis: calc((100% / 3) - 2.4rem);
     height: calc((100% / 2) - 1.6rem);
     margin: 0 1.2rem 0.8rem 1.2rem;
-    border: 1px solid black;
     padding: 0 1rem;
 }
 
