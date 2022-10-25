@@ -157,6 +157,10 @@ div.card-plan{
     margin-bottom: 2rem;
 }
 
+#margin-plus{
+    margin-bottom: 4.4rem;
+}
+
 div.plan-info h3{
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
@@ -177,13 +181,20 @@ div.plan-info ul li{
     font-size: 0.9rem;
 }
 
-div.plan-info li i{
-    padding-top: 4px;
+div.plan-info li span{
     padding-right: 0.3rem;
 }
 
 div.plan-info .trial-button{
     padding: 0.8rem 2.7rem;
+    font-size: 0.9rem;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+button#contact-us{
+    width: 100%;
+    padding: 0.8rem 3rem;
     font-size: 0.9rem;
     margin: 0 auto 1rem;
     display: block;
@@ -198,6 +209,10 @@ div.small-divider{
 div.plan-info .highlights{
     font-size: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.fa-check{
+    color: #005eff;
 }
 
 article.contact-plan{
@@ -259,19 +274,20 @@ section.partnership{
 }
 
 .partnership div.logos-part{
-    flex-basis: 30%;
+    flex-basis: calc(100vw / 3);
     background-color: aquamarine;
     flex-wrap: wrap;
 }
 
 div.logos-part .box-logo{
-    width: 50%;
-    height: 50%;
+    width: calc(100% / 2);
+    height: calc(100% / 2);
     border: 1px solid black;
 }
 
+/* Mettere una max-width */
 .partnership div.logo-info{
-    flex-basis: 40%;
+    flex-basis: calc(100vw / 3);
     background-color: rgb(34, 148, 110);
 }
 

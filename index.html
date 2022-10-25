@@ -65,7 +65,7 @@
                         <input type="radio" name="year">
                         <span>Fatturazione annuale</span>
                     </div>
-                    <!-- Da modificare funzionamento e aspetto radio-box -->
+                    <!-- Da modificare funzionamento e aspetto radio-box (aggiungere checked) -->
                 </article>
                 <article class="plan-cards flex-container">
                     <div class="card-plan">
@@ -74,17 +74,17 @@
                             <h3>Professional</h3>
                             <p class="price">&euro; 12.00</p>
                             <p class="plan-period margin-card">/mese</p>
-                            <ul class="margin-card">
+                            <ul id="margin-plus">
                                 <li class="flex-container">
-                                    <i class="fa-solid fa-user"></i>
+                                    <span><i class="fa-solid fa-user"></i></span>
                                     <span> 1 utente</span>
                                 </li>
                                 <li class="flex-container">
-                                    <i class="fa-solid fa-folder"></i>
+                                    <span><i class="fa-solid fa-folder"></i></span>
                                     <span> 5 TB di spazio di archiviazione sicuro</span>
                                 </li>
                                 <li class="flex-container">
-                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                     <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                                 </li>
                             </ul>
@@ -94,20 +94,106 @@
                             <h5 class="highlights">Punti Salienti del piano</h5>
                             <ul class="margin-card">
                                 <li class="flex-container">
-                                    <i class="fa-solid fa-check"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
                                     <span> Invia file fino a 100 GB con Dropbox Transfert</span>
                                 </li>
                                 <li class="flex-container">
-                                    <i class="fa-solid fa-check"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
                                     <span> Cartelle offline su dispositivi mobili</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="card-plan">
-                        
+                        <div class="plan-type"><i class="fa-solid fa-users"></i> Team</div>
+                        <div class="plan-info">
+                            <h3>Advanced</h3>
+                            <p class="price">&euro; 18.00</p>
+                            <p class="plan-period margin-card">/utente/mese</p>
+                            <ul class="margin-card">
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-users"></i></span>
+                                    <span> 3 o più utenti</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-folder"></i></span>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                                    <span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</span>
+                                </li>
+                            </ul>
+                            <button class="blue-button trial-button " >Prova gratis per 30 giorni</button>
+                            <p class="margin-card">oppure <a href="#">acquista ora</a></p>
+                            <div class="small-divider"></div>
+                            <h5 class="highlights">Punti Salienti del piano</h5>
+                            <ul class="margin-card">
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Invia file fino a 100 GB con Dropbox Transfert</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Cartelle offline su dispositivi mobili</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Possibilità di inserire nuovi membri del team</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Gestione dei permessi in base ai ruoli</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card-plan"></div>
+
+                    <div class="card-plan">
+                        <div class="plan-type"><i class="fa-solid fa-building"></i> Azienda</div>
+                        <div class="plan-info">
+                            <h3>Enterprise</h3>
+                            <p class="price">Contattaci</p>
+                            <p class="plan-period margin-card">-</p>
+                            <ul class="margin-card">
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                    <span> 10 o più utenti</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-folder"></i></span>
+                                    <span> Soluzioni personalizzabili per la tua azienda</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                                    <span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</span>
+                                </li>
+                            </ul>
+                            <button id="contact-us" class="blue-button">Contattaci</button>
+                            <p class="margin-card">oppure <a href="#">acquista ora</a></p>
+                            <div class="small-divider"></div>
+                            <h5 class="highlights">Punti Salienti del piano</h5>
+                            <ul class="margin-card">
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Cartelle offline su dispositivi mobili</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Servizio assistenza 24/h</span>
+                                </li>
+                                <li class="flex-container">
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                    <span> Possibilità di personalizzazione totale</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </article>
                 <article class="contact-plan">
                     <div class="card-contact"></div>
