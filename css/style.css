@@ -9,12 +9,20 @@ body{
     min-width: 1650px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .flex-container{
     display: flex;
 }
 
 .p-absolute{
     position: absolute;
+}
+
+.p-relative{
+    position: relative;
 }
 
 .medium-width{
@@ -49,18 +57,18 @@ nav ul li, #logo-small{
     border: none;
 }
 
-nav button{
+nav a{
     font-size: 1.05rem;
     padding: 0.5rem 1rem;
 }
 
 #logo-small{
     vertical-align: middle;
+    height: 80%;
 }
 
 section.main-header{
-    margin-top: 60px;
-    height: 70vh;
+    width: 100%;
     background-color: #b4d0e7;
     padding-top: 80px;
 }
@@ -68,7 +76,7 @@ section.main-header{
 article.header-container{
     margin: 0 auto;
     width: 80%;
-    height: 67vh;
+    bottom: -100px;
 }
 
 .header-container h1{
@@ -82,34 +90,34 @@ article.header-container{
 
 .header-container>div{
     height: 80%;
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 
 .main-header div.description{
-    flex-basis: 35%;
+    flex-basis: 30%;
     padding: 2rem 2.3rem;
     font-size: 1rem;
-    position: relative;
 }
 
-.description>button{
+.description>a{
     margin: 2rem 0;
     padding: 0.9rem 1.2rem;
     font-size: 1rem;
+    display: inline-block;
 }
 
 .fa-arrow-down{
     bottom: 20%;
-    left: 10%;
+    left: 15%;
     font-size: 3.15rem;
 }
 
 .main-header div.jumbotron{
-    flex-basis: 65%;
+    flex-basis: 70%;
 }
 
 div.jumbotron img{
-    height: 100%;
+    width: 900px;
 }
 
 main h2{
@@ -122,7 +130,6 @@ main h2{
 }
 
 section.business-plans{
-    height: calc(150vh - 150px);
     margin: 150px auto 0;
 }
 
@@ -133,6 +140,7 @@ article.title-check{
 .title-check div{
     display: inline-block;
     padding-right: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 article.plan-cards{
@@ -186,19 +194,12 @@ div.plan-info li span{
     padding-right: 0.3rem;
 }
 
-button.trial-button{
+a.trial-button{
     padding: 0.8rem 2.7rem;
     font-size: 0.9rem;
     margin: 0 auto 1rem;
     display: block;
-}
-
-button#contact-us{
-    width: 100%;
-    padding: 0.8rem 3rem;
-    font-size: 0.9rem;
-    margin: 0 auto 1rem;
-    display: block;
+    text-align: center;
 }
 
 div.small-divider{
@@ -231,7 +232,6 @@ article.contact-plan{
 }
 
 section.partner-contact{
-    height: 50vh;
     margin: 150px auto 0;
 }
 
@@ -240,7 +240,7 @@ section.partner-contact .partner-img{
 }
 
 .partner-img img{
-    height: 100%;
+    width: 550px;
     display: block;
     margin: 0 auto;
 }
@@ -255,15 +255,15 @@ section.partner-contact .partner-text{
     font-size: 1.5rem;
 }
 
-.partner-text button{
+.partner-text a{
     padding: 0.6rem 1rem;
     font-size: 1rem;
     background-color: white;
     border: 1px solid black;
+    color: black;
 }
 
 section.dropbox-operations{
-    height: 100vh;
     margin: 150px auto 0;
 }
 
@@ -298,7 +298,6 @@ div.image-card img{
 }
 
 section.discover{
-    height: 15vh;
     margin: 150px auto 0;
     padding: 0 2rem;
 }
@@ -306,6 +305,10 @@ section.discover{
 section.discover h2{
     width: 63%;
     font-size: 2.5rem;
+}
+
+section.discover a{
+    text-decoration: underline;
 }
 
 section.partnership{
@@ -403,7 +406,7 @@ div.logo-info .logo-divider{
 }
 
 section.free-trial{
-    height: 35vh;
+    padding: 5rem 0;
     background-color: #b4d0e7;
 }
 
@@ -423,17 +426,15 @@ section.free-trial article{
     flex-basis: 45%;
 }
 
-div.button-part button{
+div.button-part a{
     display: block;
+    width: 55%;
+    color: black;
     margin: 0 auto;
     font-size: 0.95rem;
     padding: 0.7rem 2.2rem;
     background-color: white;
     border: none;
-}
-
-section.questions{
-    height: 50vh;
 }
 
 section.questions article{
@@ -458,9 +459,9 @@ section.questions article{
 }
 
 section.tools{
-    height: 50vh;
     background-color: black;
     color: white;
+
 }
 
 article.footer-container{
@@ -489,7 +490,7 @@ p.title-list{
 .language{
     height: 20%;
     margin: 0 auto;
-    padding-top: 15px;
+    padding: 2rem 0;
 }
 
 .language .row{
