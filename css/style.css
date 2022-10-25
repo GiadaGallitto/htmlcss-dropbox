@@ -363,6 +363,30 @@ div.logos-part .box-logo{
     height: 22%;
 }
 
+#light-log{
+    background-color: #b4d0e7;
+}
+
+#light-log img{
+    height: 7%;
+}
+
+#blue-log{
+    background-color: #0d2481;
+}
+
+#blue-log img{
+    height: 25%;
+}
+
+#yellow-log{
+    background-color: #ffd830;
+}
+
+#yellow-log img{
+    height: 30%;
+}
+
 .partnership div.logo-info{
     background-color: rgb(34, 148, 110);
 }
