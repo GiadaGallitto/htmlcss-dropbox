@@ -121,7 +121,7 @@ article.title-check{
     height: 12%;
 }
 
-.title-check h2{
+main h2{
     font-size: 2rem;
     margin-bottom: 2.5rem;
 }
@@ -265,24 +265,37 @@ section.partner-contact .partner-text{
 section.dropbox-operations{
     height: 100vh;
     margin: 150px auto 0;
-    background-color: rgb(114, 17, 17);
 }
 
-.dropbox-operations div{
+.dropbox-operations>div{
     height: 10%;
 }
 
 article.operations-container{
     height: 90%;
-    background-color: rgb(153, 60, 60);
     flex-wrap: wrap;
 }
 
 .operations-container .op-card{
-    flex-basis: calc((100% / 3) - 3rem);
-    height: calc((100% / 2) - 2rem);
-    margin: 0 1.5rem 2rem 1.5rem;
+    flex-basis: calc((100% / 3) - 2.4rem);
+    height: calc((100% / 2) - 1.6rem);
+    margin: 0 1.2rem 0.8rem 1.2rem;
     border: 1px solid black;
+    padding: 0 1rem;
+}
+
+.op-card p{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.op-card div.image-card{
+    height: 57%;
+}
+
+div.image-card img{
+    width: 100%;
+    display: block;
 }
 
 section.discover{
