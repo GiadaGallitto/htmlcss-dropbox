@@ -122,7 +122,7 @@ article.title-check{
 }
 
 main h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2.5rem;
 }
 
@@ -304,8 +304,8 @@ section.discover{
 }
 
 section.discover h2{
-    width: 55%;
-    font-size: 2rem;
+    width: 63%;
+    font-size: 2.5rem;
 }
 
 section.partnership{
@@ -411,13 +411,26 @@ section.free-trial{
 section.free-trial article{
     height: 100%;
     margin: 0 auto;
-    background-color: #7cafda;
     justify-content: space-between;
     align-items: center;
 }
 
-article#trial div{
-    border: 1px solid black;
+#trial div.text-part{
+    flex-basis: 55%;
+    color: #61072b;
+}
+
+#trial div.button-part{
+    flex-basis: 45%;
+}
+
+div.button-part button{
+    display: block;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    padding: 0.7rem 2.2rem;
+    background-color: white;
+    border: none;
 }
 
 section.questions{
