@@ -74,14 +74,14 @@ div.layover{
 }
 
 .layover div.feature{
-    width: 60%;
-    color: #91c0e7;
-    padding: 1.5rem;
+    width: 90%;
+    color: #b5cde0;
+    padding: 1.5rem 3rem;
     text-shadow: 2px 2px #053358;
-    font-size: 2.5rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
     text-align: center;
     border-radius: 20px;
+    box-shadow: 0 0 100px 50px #105996;
     background-color: rgba(0, 0, 0, 0.7);
     top: 50%;
     left: 50%;
