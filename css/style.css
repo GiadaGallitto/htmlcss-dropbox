@@ -63,12 +63,26 @@ nav ul li:hover{
     background-color: #f2eee8;
 }
 
-/* nav li:hover main{
-    opacity: 50%;
-} */
+div.layover{
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    display: none;
+}
+
+
+nav li:hover div.layover{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 nav li .drop-menu{
     background-color: #f2eee8;
+    z-index: 2;
     top: 100%;
     left: 0;
     width: 400px;
@@ -78,6 +92,14 @@ nav li .drop-menu{
 
 nav li:hover .drop-menu{
     display: block;
+}
+
+div.drop-menu .left-menu{
+    flex-basis: 50%;
+}
+
+div.drop-menu .right-menu{
+    flex-basis: 50%;
 }
 
 .blue-button{
@@ -95,12 +117,6 @@ nav a{
 #logo-small{
     vertical-align: middle;
     height: 80%;
-}
-
-div.layover{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 section.main-header{
