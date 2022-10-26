@@ -47,8 +47,33 @@ nav{
 
 nav ul li, #logo-small{
     display: inline-block;
-    padding-right: 2rem;
+    padding: 25px 1rem;
     font-size: 1.05rem;
+}
+
+#logo-small{
+    padding-top: 25px;
+}
+
+nav li{
+    height: 80px;
+}
+
+nav ul li:hover{
+    background-color: #f2eee8;
+}
+
+nav li .drop-menu{
+    background-color: #f2eee8;
+    top: 100%;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    display: none;
+}
+
+nav li:hover .drop-menu{
+    display: block;
 }
 
 .blue-button{
@@ -60,6 +85,7 @@ nav ul li, #logo-small{
 nav a{
     font-size: 1.05rem;
     padding: 0.5rem 1rem;
+    color: black;
 }
 
 #logo-small{
