@@ -63,6 +63,10 @@ nav ul li:hover{
     background-color: #f2eee8;
 }
 
+/* nav li:hover main{
+    opacity: 50%;
+} */
+
 nav li .drop-menu{
     background-color: #f2eee8;
     top: 100%;
@@ -91,6 +95,12 @@ nav a{
 #logo-small{
     vertical-align: middle;
     height: 80%;
+}
+
+div.layover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 section.main-header{
