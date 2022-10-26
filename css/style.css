@@ -74,14 +74,14 @@ div.layover{
 }
 
 .layover div.feature{
-    width: 90%;
+    width: 75%;
     color: #b5cde0;
     padding: 1.5rem 3rem;
     text-shadow: 2px 2px #053358;
-    font-size: 3rem;
+    font-size: 1.8rem;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0 0 100px 50px #105996;
+    box-shadow: 0 0 10px 5px #051929;
     background-color: rgba(0, 0, 0, 0.7);
     top: 50%;
     left: 50%;
@@ -102,6 +102,10 @@ nav li .drop-menu{
     width: 400px;
     height: 300px;
     display: none;
+}
+
+nav li .short-menu{
+    width: 250px;
 }
 
 nav li:hover .drop-menu{
