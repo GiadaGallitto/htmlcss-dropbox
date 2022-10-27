@@ -84,9 +84,8 @@ nav ul .gray-hov:hover{
     border-radius: 20px;
     box-shadow: 0 0 10px 5px #051929;
     background-color: rgba(0, 0, 0, 0.7);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 5%;
 }
 
 .gray-hov:hover .layover{
@@ -116,14 +115,24 @@ nav ul .gray-hov:hover{
     z-index: 2;
     top: 100%;
     right: 0;
-    width: 350px;
-    height: 150px;
+    width: 395px;
+    height: 160px;
     display: none;
 }
 
-li div#function-drop,
-li div#solution-drop{
+li div#function-drop{
     width: 300px;
+    height: 450px;
+}
+
+li div#solution-drop{
+    width: 230px;
+    height: 270px;
+}
+
+li div#support-drop{
+    width: 300px;
+    height: 120px;
 }
 
 nav .nav-item:hover .drop-menu{
