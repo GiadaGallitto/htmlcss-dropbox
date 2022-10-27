@@ -60,7 +60,7 @@ nav .nav-item{
     height: 80px;
 }
 
-nav ul .gray-hov:hover{
+.gray-hov:hover{
     background-color: #f2eee8;
 }
 
@@ -580,10 +580,47 @@ a.trial-button{
     padding-right: 2.5rem;
 }
 
-.question-container p{
+.fa-angle-down{
+    z-index: 1;
+    color: black;
+}
+
+.fa-angle-up{
+    position: absolute;
+    right: 2.5rem;
+    top: 1.7rem;
+    color: white;
+}
+
+.question-container p.question{
     line-height: 70px;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+.question-container p.answer{
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    width: 90%;
+    display: none;
+}
+
+#q:hover div.row-quest{
+    background-color: white;
+}
+
+#q:hover .fa-angle-up{
+    color: black;
+    z-index: 1;
+}
+
+#q:hover .fa-angle-down{
+    color: white;
+    z-index: 0;
+}
+
+#q:hover p.answer{
+    display: block;
 }
 
 .tools{
