@@ -11,6 +11,7 @@ body{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 .flex-container{
@@ -132,12 +133,11 @@ nav .nav-item:hover .drop-menu{
 .menu-container .left-menu{
     width: 50%;
     height: 100%;
-    padding: 1rem;
 }
 
 .drop-menu ul li{
     font-size: 0.8rem;
-    margin-bottom: 0.8rem;
+    padding: 0.54rem 1rem;
 }
 
 .drop-menu .ul-title{
@@ -147,7 +147,10 @@ nav .nav-item:hover .drop-menu{
 .menu-container .right-menu{
     width: 50%;
     height: 100%;
-    padding: 1rem;
+}
+
+li.menu-item:hover{
+    background-color: #e8e2d7;
 }
 
 .one-menu{
@@ -180,10 +183,14 @@ i.drop-icon{
     background-color: #297afe;
 }
 
-nav a{
+.nav-item>a{
     font-size: 1.05rem;
     padding: 0.5rem 1rem;
     color: black;
+}
+
+.nav-item a.blue-button{
+    color: white;
 }
 
 #logo-small{
@@ -199,7 +206,7 @@ nav a{
 
 .header-container{
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     bottom: -100px;
 }
 
@@ -207,7 +214,7 @@ nav a{
     font-size: 3.3rem;
     font-weight: 800;
     width: 80%;
-    padding-left: 5rem;
+    padding-left: 2.7rem;
     margin-bottom: 2.2rem;
 }
 
