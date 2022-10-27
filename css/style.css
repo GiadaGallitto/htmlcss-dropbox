@@ -45,7 +45,7 @@ nav{
     z-index: 3;
 }
 
-nav ul li, #logo-small{
+.nav-item, #logo-small{
     display: inline-block;
     padding: 25px 1rem;
     font-size: 1.05rem;
@@ -55,7 +55,7 @@ nav ul li, #logo-small{
     padding-top: 25px;
 }
 
-nav li{
+nav .nav-item{
     height: 80px;
 }
 
@@ -63,7 +63,7 @@ nav ul .gray-hov:hover{
     background-color: #f2eee8;
 }
 
-div.layover{
+.layover{
     z-index: 1;
     height: 100vh;
     width: 100vw;
@@ -73,7 +73,7 @@ div.layover{
     display: none;
 }
 
-.layover div.feature{
+.layover .feature{
     width: 75%;
     color: #b5cde0;
     padding: 1.5rem 3rem;
@@ -88,7 +88,7 @@ div.layover{
     transform: translate(-50%, -50%);
 }
 
-li:hover div.layover{
+.gray-hov:hover .layover{
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -104,14 +104,19 @@ li:hover div.layover{
     display: none;
 }
 
+.menu-container{
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+}
+
 .right-nav li .drop-menu{
     background-color: #f2eee8;
     z-index: 2;
-    height: 100px;
     top: 100%;
     right: 0;
     width: 350px;
-    height: 100px;
+    height: 150px;
     display: none;
 }
 
@@ -120,16 +125,33 @@ li div#solution-drop{
     width: 250px;
 }
 
-nav li:hover .drop-menu{
+nav .nav-item:hover .drop-menu{
     display: block;
 }
 
-div.drop-menu .left-menu{
-    flex-basis: 50%;
+.menu-container .left-menu{
+    width: 50%;
+    height: 100%;
+    background-color: pink;
 }
 
-div.drop-menu .right-menu{
-    flex-basis: 50%;
+/* .drop-menu ul li{
+    display: block;
+    background-color: #005eff;
+    border: 1px solid black;
+    flex-basis: 50px;
+} */
+
+.menu-container .right-menu{
+    width: 50%;
+    height: 100%;
+    background-color: #a2d39b;
+}
+
+.one-menu{
+    width: 100%;
+    height: 100%;
+    background-color: #61082b;
 }
 
 .blue-button{
@@ -153,13 +175,13 @@ nav a{
     height: 80%;
 }
 
-section.main-header{
+.main-header{
     width: 100%;
     background-color: #b4d0e7;
     padding-top: 80px;
 }
 
-article.header-container{
+.header-container{
     margin: 0 auto;
     width: 80%;
     bottom: -100px;
@@ -177,7 +199,7 @@ article.header-container{
     padding-left: 3rem;
 }
 
-.main-header div.description{
+.main-header.description{
     flex-basis: 30%;
     padding: 2rem 2.3rem;
     font-size: 1rem;
@@ -200,7 +222,7 @@ article.header-container{
     flex-basis: 70%;
 }
 
-div.jumbotron img{
+.jumbotron img{
     width: 900px;
 }
 
@@ -213,7 +235,7 @@ main h2{
     margin-bottom: 2rem;
 }
 
-section.business-plans{
+.business-plans{
     margin: 150px auto 0;
 }
 
@@ -223,16 +245,16 @@ section.business-plans{
     margin-bottom: 2.5rem;
 }
 
-article.plan-cards{
+.plan-cards{
     justify-content: space-between;
 }
 
-div.card-plan{
+.card-plan{
     width: calc((100% / 3) - 1.5rem);
     border: 2px solid #d0d0d3;
 }
 
-div.plan-type{
+.plan-type{
     width: 100%;
     height: 43px;
     text-align: center;
@@ -240,8 +262,8 @@ div.plan-type{
     border-bottom: 1px solid #d0d0d3;
 }
 
-.card-plan div.plan-info,
-div.card-contact{
+.card-plan .plan-info,
+.card-contact{
     padding: 1.5rem 1.5rem;
 }
 
@@ -249,27 +271,27 @@ div.card-contact{
     margin-bottom: 4.4rem;
 }
 
-section.business-plans h3{
+.business-plans h3{
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
 }
 
-section.business-plans p{
+.business-plans p{
     margin-bottom: 0.7rem;
     font-size: 0.95rem;
 }
 
-div.plan-info p.price{
+.plan-info p.price{
     font-weight: bold;
     font-size: 0.9rem;
 }
 
-div.plan-info ul li{
+.plan-info ul li{
     margin-bottom: 0.8rem;
     font-size: 0.9rem;
 }
 
-div.plan-info li span{
+.plan-info li span{
     padding-right: 0.3rem;
 }
 
@@ -281,13 +303,13 @@ a.trial-button{
     text-align: center;
 }
 
-div.small-divider{
+.small-divider{
     width: 30%;
     border: 1px solid lightgray;
     margin: 1rem 0;
 }
 
-div.plan-info .highlights{
+.plan-info .highlights{
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -296,24 +318,24 @@ div.plan-info .highlights{
     color: #005eff;
 }
 
-article.contact-plan{
+.contact-plan{
     margin-top: 2rem;
     border: 2px solid #d0d0d3;
 }
 
-.card-contact div.left-card{
+.card-contact .left-card{
     flex-basis: 72%;
 }
 
-.card-contact div.right-card{
+.card-contact .right-card{
     flex-basis: 28%;
 }
 
-section.partner-contact{
+.partner-contact{
     margin: 150px auto 0;
 }
 
-section.partner-contact .partner-img{
+.partner-contact .partner-img{
     flex-basis: 60%;
 }
 
@@ -323,7 +345,7 @@ section.partner-contact .partner-img{
     margin: 0 auto;
 }
 
-section.partner-contact .partner-text{
+.partner-contact .partner-text{
     flex-basis: 40%;
     padding: 2rem;
 }
@@ -345,11 +367,11 @@ section.partner-contact .partner-text{
     background-color: #f0eeee;
 }
 
-section.dropbox-operations{
+.dropbox-operations{
     margin: 150px auto 0;
 }
 
-article.operations-container{
+.operations-container{
     flex-wrap: wrap;
 }
 
@@ -364,40 +386,40 @@ article.operations-container{
     margin-top: 0.5rem;
 }
 
-div.image-card img{
+.image-card img{
     width: 100%;
     display: block;
 }
 
-section.discover{
+.discover{
     margin: 150px auto 0;
     padding: 0 2rem;
 }
 
-section.discover h2{
+.discover h2{
     width: 63%;
     font-size: 2.5rem;
 }
 
-section.discover a{
+.discover a{
     text-decoration: underline;
 }
 
-section.partnership{
+.partnership{
     background-color: rgb(167, 164, 164);
     margin-top: 150px;
 }
 
-section.partnership>div{
+.partnership>div{
     width: calc(100vw / 3);
     height: calc(100vw / 3);
 }
 
-.partnership div.logos-part{
+.partnership .logos-part{
     flex-wrap: wrap;
 }
 
-div.logos-part .box-logo{
+.logos-part .box-logo{
     width: 50%;
     height: 50%;
     justify-content: center;
@@ -461,28 +483,28 @@ div.logos-part .box-logo{
     height: 30%;
 }
 
-.partnership div.logo-info{
+.partnership .logo-info{
     background-color: #f5f5f5;
     padding: 2.5rem;
 }
 
-div.logo-info img{
+.logo-info img{
     height: 15%;
     display: block;
 }
 
-div.logo-info .logo-divider{
+.logo-info .logo-divider{
     width: 20%;
     border: 1px solid lightgray;
     margin: 2rem 0;
 }
 
-section.free-trial{
+.free-trial{
     padding: 5rem 0;
     background-color: #b4d0e7;
 }
 
-section.free-trial article{
+.free-trial article{
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -493,11 +515,11 @@ section.free-trial article{
     color: #61072b;
 }
 
-#trial div.button-part{
+#trial .button-part{
     flex-basis: 45%;
 }
 
-div.button-part a{
+.button-part a{
     display: block;
     width: 55%;
     color: black;
@@ -508,11 +530,11 @@ div.button-part a{
     border: none;
 }
 
-div.button-part a:hover{
+.button-part a:hover{
     background-color: #f0eeee;
 }
 
-section.questions article{
+.questions article{
     margin: 100px auto;
 }
 
@@ -520,7 +542,7 @@ section.questions article{
     padding-bottom: 15px;
 }
 
-.question-container div.row-quest{
+.question-container .row-quest{
     justify-content: space-between;
     align-items: center;
     padding-right: 2.5rem;
@@ -532,17 +554,17 @@ section.questions article{
     font-size: 0.9rem;
 }
 
-section.tools{
+.tools{
     background-color: black;
     color: white;
 
 }
 
-article.footer-container{
+.footer-container{
     margin: 0 auto;
 }
 
-.footer-container div.tool-list{
+.footer-container .tool-list{
     margin-top: 7rem;
     flex-basis: calc(100% / 5);
     padding-right: 1.5rem;
@@ -554,7 +576,7 @@ article.footer-container{
     font-size: 0.9rem;
 }
 
-p.title-list{
+.title-list{
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
