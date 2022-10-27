@@ -645,6 +645,10 @@ a.trial-button{
     font-size: 0.9rem;
 }
 
+.tool-list ul li:hover{
+    text-decoration: underline;
+}
+
 .title-list{
     font-size: 1.2rem;
     font-weight: bold;
