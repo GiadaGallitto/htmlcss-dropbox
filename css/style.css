@@ -99,8 +99,8 @@ nav ul .gray-hov:hover{
     z-index: 2;
     top: 100%;
     left: 0;
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 380px;
     display: none;
 }
 
@@ -132,25 +132,28 @@ nav .nav-item:hover .drop-menu{
 .menu-container .left-menu{
     width: 50%;
     height: 100%;
-    background-color: pink;
+    padding: 1rem;
 }
 
-/* .drop-menu ul li{
-    display: block;
-    background-color: #005eff;
-    border: 1px solid black;
-    flex-basis: 50px;
-} */
+.drop-menu ul li{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.drop-menu .ul-title{
+    font-weight: 600;
+}
 
 .menu-container .right-menu{
     width: 50%;
     height: 100%;
-    background-color: #a2d39b;
+    padding: 1rem;
 }
 
 .one-menu{
     width: 100%;
     height: 100%;
+    padding: 1rem;
     background-color: #61082b;
 }
 
